@@ -1,137 +1,76 @@
 import { useEffect, useId, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import andrewGreeneImage from '@/images/avatars/andrew-greene.jpg'
-import cathleneBurrageImage from '@/images/avatars/cathlene-burrage.jpg'
-import damarisKimuraImage from '@/images/avatars/damaris-kimura.jpg'
-import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
-import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-import giordanoSagucioImage from '@/images/avatars/giordano-sagucio.jpg'
-import gordonSandersonImage from '@/images/avatars/gordon-sanderson.jpg'
-import heatherTerryImage from '@/images/avatars/heather-terry.jpg'
-import ibrahimFraschImage from '@/images/avatars/ibrahim-frasch.jpg'
-import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import richardAstley from '@/images/avatars/richard-astley.jpg'
-import kimberlyParsonsImage from '@/images/avatars/kimberly-parsons.jpg'
-import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-import piersWilkinsImage from '@/images/avatars/piers-wilkins.jpg'
-import rinaldoBeynonImage from '@/images/avatars/rinaldo-beynon.jpg'
-import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
-import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
-import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
+
+import chineseTuxedo from '@/images/avatars/chinese-tuxedo.webp'
+import dame from '@/images/avatars/dame.webp'
+import olmsted from '@/images/avatars/olmsted.webp'
+import falansai from '@/images/avatars/falansai.webp'
+import bonnies from '@/images/avatars/bonnies.webp'
 
 const days = [
   {
-    name: 'Opening Day',
-    date: 'April 4',
-    dateTime: '2022-04-04',
+    name: 'Chinese Tuxedo',
+    date: 'May 12',
+    dateTime: '2022-05-12',
     speakers: [
       {
-        name: 'Steven McHail',
-        role: 'Designer at Globex Corporation',
-        image: stevenMchailImage,
-      },
-      {
-        name: 'Jaquelin Isch',
-        role: 'UX Design at InGen',
-        image: jaquelinIschImage,
-      },
-      {
-        name: 'Dianne Guilianelli',
-        role: 'General Manager at Initech',
-        image: dianneGuilianelliImage,
-      },
-      {
-        name: 'Ronni Cantadore',
-        role: 'Design Engineer at Weyland-Yutani',
-        image: ronniCantadoreImage,
-      },
-      {
-        name: 'Erhart Cockrin',
-        role: 'Product Lead at Cyberdyne Systems',
-        image: erhartCockrinImage,
-      },
-      {
-        name: 'Parker Johnson',
-        role: 'UI Designer at MomCorp',
-        image: parkerJohnsonImage,
+        name: 'Website',
+        role: '8:00 PM - $180',
+        image: chineseTuxedo,
       },
     ],
   },
   {
-    name: 'Speakers & Workshops',
-    date: 'April 5',
-    dateTime: '2022-04-05',
+    name: 'Dame',
+    date: 'May 15',
+    dateTime: '2022-05-15',
     speakers: [
       {
-        name: 'Damaris Kimura',
-        role: 'Senior Engineer at OCP',
-        image: damarisKimuraImage,
-      },
-      {
-        name: 'Ibrahim Frasch',
-        role: 'Programmer at Umbrella Corp',
-        image: ibrahimFraschImage,
-      },
-      {
-        name: 'Cathlene Burrage',
-        role: 'Frontend Developer at Buy n Large',
-        image: cathleneBurrageImage,
-      },
-      {
-        name: 'Rinaldo Beynon',
-        role: 'Data Scientist at Rekall',
-        image: rinaldoBeynonImage,
-      },
-      {
-        name: 'Waylon Hyden',
-        role: 'DevOps at RDA Corporation',
-        image: waylonHydenImage,
-      },
-      {
-        name: 'Giordano Sagucio',
-        role: 'Game Developer at Soylent Corp',
-        image: giordanoSagucioImage,
+        name: 'Dame',
+        role: '1:00 PM - $120',
+        image: dame,
       },
     ],
   },
   {
-    name: 'Interviews',
-    date: 'April 6',
-    dateTime: '2022-04-06',
+    name: 'Olmsted',
+    date: 'May 17',
+    dateTime: '2022-05-17',
     speakers: [
       {
-        name: 'Andrew Greene',
-        role: 'Frontend Developer at Ultratech',
-        image: andrewGreeneImage,
+        name: 'Olmsted',
+        role: '7:00 PM - $180',
+        image: olmsted,
       },
+    ],
+  },
+  {
+    name: 'Falansai',
+    date: 'May 25',
+    dateTime: '2022-05-25',
+    speakers: [
       {
-        name: 'Heather Terry',
-        role: 'Backend Developer at Xanatos Enterprises',
-        image: heatherTerryImage,
+        name: 'Falansai',
+        role: '7:00 PM - $180',
+        image: falansai,
       },
+    ],
+  },
+  {
+    name: "Bonnie's",
+    date: 'May 26',
+    dateTime: '2022-05-26',
+    speakers: [
       {
-        name: 'Piers Wilkins',
-        role: 'Full stack Developer at BiffCo',
-        image: piersWilkinsImage,
-      },
-      {
-        name: 'Gordon Sanderson',
-        role: 'Mobile Developer at Cobra Industries',
-        image: gordonSandersonImage,
-      },
-      {
-        name: 'Kimberly Parsons',
-        role: 'Game Developer at Tyrell Corporation',
-        image: kimberlyParsonsImage,
-      },
-      {
-        name: 'Richard Astley',
-        role: 'CEO at Roll Out',
-        image: richardAstley,
+        name: "Bonnie's",
+        role: '8:00 PM - $180',
+        image: bonnies,
       },
     ],
   },
@@ -179,13 +118,14 @@ export function Speakers() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="speakers-title"
-            className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
+            className="font-display text-4xl font-medium tracking-tighter text-emerald-600 sm:text-5xl"
           >
-            Speakers
+            Restaurants
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            Learn from the experts on the cutting-edge of deception at the most
-            sinister companies.
+          <p className="mt-4 font-display text-2xl tracking-tight text-emerald-900">
+            Enjoy the best dishes from the most popping restaurants in NYC
+            paired with conversations about good food, new communities, and new
+            ways to socialize intentionally.
           </p>
         </div>
         <Tab.Group
@@ -204,7 +144,7 @@ export function Speakers() {
                       className={clsx(
                         'absolute top-[0.5625rem] -left-[0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                         {
-                          'fill-blue-600 stroke-blue-600':
+                          'fill-emerald-600 stroke-emerald-600':
                             dayIndex === selectedIndex,
                           'fill-transparent stroke-slate-400':
                             dayIndex !== selectedIndex,
@@ -220,7 +160,7 @@ export function Speakers() {
                     <div className="relative">
                       <div
                         className={clsx('font-mono text-sm', {
-                          'text-blue-600': dayIndex === selectedIndex,
+                          'text-emerald-600': dayIndex === selectedIndex,
                           'text-slate-500': dayIndex !== selectedIndex,
                         })}
                       >
@@ -231,7 +171,7 @@ export function Speakers() {
                       </div>
                       <time
                         dateTime={day.dateTime}
-                        className="mt-1.5 block text-2xl font-semibold tracking-tight text-blue-900"
+                        className="mt-1.5 block text-2xl font-semibold tracking-tight text-emerald-900"
                       >
                         {day.date}
                       </time>
@@ -245,7 +185,7 @@ export function Speakers() {
             {days.map((day) => (
               <Tab.Panel
                 key={day.dateTime}
-                className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3 [&:not(:focus-visible)]:focus:outline-none"
+                className=" [&:not(:focus-visible)]:focus:outline-none"
                 unmount={false}
               >
                 {day.speakers.map((speaker, speakerIndex) => (
@@ -255,14 +195,14 @@ export function Speakers() {
                         className={clsx(
                           'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
                           [
-                            'border-blue-300',
-                            'border-indigo-300',
+                            'border-emerald-300',
+                            'border-emerald-300',
                             'border-sky-300',
                           ][speakerIndex % 3]
                         )}
                       />
                       <div
-                        className="absolute inset-0 bg-indigo-50"
+                        className="absolute inset-0 bg-emerald-50"
                         style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
                       >
                         <Image

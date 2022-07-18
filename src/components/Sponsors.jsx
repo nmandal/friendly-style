@@ -19,10 +19,11 @@ export function Sponsors() {
         Sponsors
       </h2>
       <Container>
-        <p className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
-          Current sponsorships for our workshops and speakers.
+        <p className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-emerald-900 sm:text-5xl">
+          If you&apos;re a CPG food brand that wants to sponsor us and get your
+          product in front of some rad people, please drop us a line!
         </p>
-        <ul className="mt-20 flex flex-col items-center justify-center space-y-12 sm:flex-row sm:space-x-12 sm:space-y-0 md:flex-col md:space-x-0 md:space-y-12">
+        {/* <ul className="mt-20 flex flex-col items-center justify-center space-y-12 sm:flex-row sm:space-x-12 sm:space-y-0 md:flex-col md:space-x-0 md:space-y-12">
           <li>
             <ul className="flex flex-col items-center space-y-12 sm:space-y-12 md:flex-row md:space-y-0 md:space-x-16 lg:space-x-32">
               <li className="flex">
@@ -74,7 +75,7 @@ export function Sponsors() {
               </li>
             </ul>
           </li>
-        </ul>
+        </ul> */}
       </Container>
     </section>
   )

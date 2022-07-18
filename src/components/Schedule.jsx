@@ -8,152 +8,127 @@ import backgroundImage from '@/images/background.jpg'
 
 const schedule = [
   {
-    date: 'April 4',
-    dateTime: '2022-04-04',
+    date: 'May 12',
+    dateTime: '2022-05-12',
     summary:
-      'The first day of the conference is focused on dark patterns for ecommerce.',
+      'Chinese Tuxedo by Paul Donnelly and team are presenting traditional banquet-style dishes with a bit of a twist.',
     timeSlots: [
       {
-        name: 'Steven McHail',
-        description: 'Not so one-time payments',
+        name: 'Sweet potato spring roll',
+        description: '',
         start: '9:00AM',
         end: '10:00AM',
       },
       {
-        name: 'Jaquelin Isch',
-        description: 'The finer print',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Steamed branzino',
+        description: '',
+        start: '9:00AM',
+        end: '10:00AM',
       },
       {
-        name: 'Dianne Guilianelli',
-        description: 'Post-purchase blackmail',
-        start: '11:00AM',
-        end: '12:00PM',
-      },
-      {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Ronni Cantadore',
-        description: 'Buy or die',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Erhart Cockrin',
-        description: 'In-person cancellation',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Parker Johnson',
-        description: 'The pay/cancel switcheroo',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: 'Vegetarian xo fried rice',
+        description: '',
+        start: '9:00AM',
+        end: '10:00AM',
       },
     ],
   },
   {
-    date: 'April 5',
-    dateTime: '2022-04-05',
+    date: 'May 15',
+    dateTime: '2022-05-15',
     summary:
-      'Next we spend the day talking about deceiving people with technology.',
+      'Dame by Patricia Howard & Ed Szymanski is showing NYC peeps that there is a high bar for hearty seafood.',
     timeSlots: [
       {
-        name: 'Damaris Kimura',
-        description: 'The invisible card reader',
+        name: 'Grilled oysters with green chartreuse hollandaise',
+        description: '',
         start: '9:00AM',
         end: '10:00AM',
       },
       {
-        name: 'Ibrahim Frasch',
-        description: 'Stealing fingerprints',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Fish pie',
+        description: '',
+        start: '9:00AM',
+        end: '10:00AM',
       },
       {
-        name: 'Cathlene Burrage',
-        description: 'Voting machines',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Proper English chips',
+        description: 'Fries for you Americans',
+        start: '9:00AM',
+        end: '10:00AM',
       },
       {
-        name: 'Lunch',
-        description: null,
-        start: '12:00AM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Rinaldo Beynon',
-        description: 'Blackhat SEO that works',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Waylon Hyden',
-        description: 'Turning your audience into a botnet',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Giordano Sagucio',
-        description: 'Fly phishing',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: 'Lemon posset',
+        description: '',
+        start: '9:00AM',
+        end: '10:00AM',
       },
     ],
   },
   {
-    date: 'April 6',
-    dateTime: '2022-04-06',
+    date: 'May 17',
+    dateTime: '2022-05-17',
     summary:
-      'We close out the event previewing new techniques that are still in development.',
+      'Olmsted by Greg Baxtrom and Ian Rothman have created a culinary institution that gives off this sense that they are chill but are really pretentious about the quality of dishes that they are serving.',
     timeSlots: [
       {
-        name: 'Andrew Greene',
-        description: 'Neuralink dark patterns',
+        name: 'Lime leaf popcorn monkfish',
+        description: '',
         start: '9:00AM',
         end: '10:00AM',
       },
       {
-        name: 'Heather Terry',
-        description: 'DALL-E for passports',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Rutabaga soup',
+        description: '',
+        start: '9:00AM',
+        end: '10:00AM',
       },
       {
-        name: 'Piers Wilkins',
-        description: 'Quantum password cracking',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Rainbow carrot cake',
+        description: '',
+        start: '9:00AM',
+        end: '10:00AM',
+      },
+    ],
+  },
+  {
+    date: 'May 25',
+    dateTime: '2022-05-25',
+    summary:
+      'Falansai by Eric Tran and team showcases their heritage while remaining undeterred by the old guard says.',
+    timeSlots: [
+      {
+        name: 'Dac Biet',
+        description:
+          'A special Vietnamese tasting menu featuring seasonal dishes that meld Vietnamese and Mexican dishes.',
+        start: '9:00AM',
+        end: '10:00AM',
+      },
+    ],
+  },
+  {
+    date: 'May 26',
+    dateTime: '2022-05-26',
+    summary:
+      "Bonnie's by Brooklyn native and Win Son alum Calvin Eng is whipping iconic dishes celebrating his Taiwanese heritage with that cool boy NYC flair.",
+    timeSlots: [
+      {
+        name: 'Tinned dace fish',
+        description: '',
+        start: '9:00AM',
+        end: '10:00AM',
       },
       {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
+        name: 'Cha sui McRib',
+        description: '',
+        start: '9:00AM',
+        end: '10:00AM',
       },
       {
-        name: 'Gordon Sanderson',
-        description: 'SkyNet is coming',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Kimberly Parsons',
-        description: 'Dark patterns for the metaverse',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Richard Astley',
-        description: 'Knowing the game and playing it',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: 'Cantonese cacio e pepe',
+        description: '',
+        start: '9:00AM',
+        end: '10:00AM',
       },
     ],
   },
@@ -227,10 +202,10 @@ function ScheduleTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-2xl font-semibold tracking-tight text-blue-900">
+      <h3 className="mt-3 text-2xl font-semibold tracking-tight text-emerald-900">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 text-base tracking-tight text-blue-900">
+      <p className="mt-1.5 text-base tracking-tight text-emerald-900">
         {day.summary}
       </p>
     </>
@@ -242,26 +217,26 @@ function TimeSlots({ day, className }) {
     <div
       className={clsx(
         className,
-        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur'
+        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-emerald-900/5 backdrop-blur'
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
         <div key={timeSlot.start}>
           {timeSlotIndex > 0 && (
-            <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
+            <div className="mx-auto mb-8 h-px w-48 bg-emerald-500/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-blue-900">
+          <h4 className="text-lg font-semibold tracking-tight text-emerald-900">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
             <>
               <p className="sr-only">talking about</p>
-              <p className="mt-1 tracking-tight text-blue-900">
+              <p className="mt-1 tracking-tight text-emerald-900">
                 {timeSlot.description}
               </p>
             </>
           )}
-          <p className="sr-only">at</p>
+          {/* <p className="sr-only">at</p>
           <p className="mt-1 font-mono text-sm text-slate-500">
             <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
               {timeSlot.start}
@@ -271,7 +246,7 @@ function TimeSlots({ day, className }) {
               {timeSlot.end}
             </time>{' '}
             PST
-          </p>
+          </p> */}
         </div>
       ))}
     </div>
@@ -303,28 +278,28 @@ export function Schedule() {
       </h2>
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <p className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, evil
-            geniuses.
+          <p className="font-display text-4xl font-medium tracking-tighter text-emerald-600 sm:text-5xl">
+            Put on your best spring-summer outfits, practice the hand motions
+            for passing plates, and join us in dining Friendly Style!
           </p>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            The worst people in our industry giving the best talks you’ve ever
-            seen. Nothing will be recorded and every attendee has to sign an NDA
-            to watch the talks.
+          <p className="mt-4 font-display text-2xl tracking-tight text-emerald-900">
+            Price includes the cost of dinners, drinks, vibes, and also the
+            effort in putting together a memorable dining experience that you’ll
+            tell everyone about.
           </p>
         </div>
       </Container>
       <div className="relative mt-14 sm:mt-24">
-        <div className="absolute -inset-x-0 -top-40 -bottom-32 overflow-hidden bg-indigo-50">
+        <div className="absolute -inset-x-0 -top-40 -bottom-32 overflow-hidden bg-emerald-50">
           <div className="absolute left-full top-0 translate-y-[0%] -translate-x-[50%] sm:left-1/2 sm:-translate-y-[15%] sm:-translate-x-[20%] md:translate-x-[0%] lg:translate-x-[5%] lg:translate-y-[4%] xl:-translate-y-[8%] xl:translate-x-[27%]">
-            <Image
+            {/* <Image
               src={backgroundImage}
               alt=""
               layout="fixed"
               width={918}
               height={1495}
               unoptimized
-            />
+            /> */}
           </div>
           <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
           <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
