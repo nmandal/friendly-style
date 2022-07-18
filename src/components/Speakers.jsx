@@ -20,7 +20,7 @@ const days = [
     dateTime: '2022-05-12',
     speakers: [
       {
-        name: 'Website',
+        name: 'Chinese Tuxedo',
         role: '8:00 PM - $180',
         image: chineseTuxedo,
       },
